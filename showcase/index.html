@@ -1,0 +1,47 @@
+ 
+          <!DOCTYPE html>
+          <html>
+          <head>
+          	<link rel="stylesheet" type="text/css" href="showcase.css">
+          	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          	<!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+          	<title></title>
+          </head>
+          <body>
+          <div class="container">
+          	<p class="rb">The Design Showcase <br>
+<small class="small"><b> Pwn </b>(ing) people since 2000</small>
+          	</p>
+          	<div class="row">
+          		<div class="col s12 m12 l12 anim1 ">
+          			<img src="1.jpg" class="ew one">
+          		</div>
+          		<div class="col s12 m12 l12 anim2">
+          			<img src="2.png" class="ew two">
+          		</div>
+          		<div class="col s12 m12 l12 anim3">
+          			<img src="3.jpg" class="ew three">
+          		</div>
+          	</div>
+          </div>
+          </body>
+          <script type="text/javascript">
+          	var $document = $(document),
+    $element = $('.ew'),
+    className = 'ew';
+
+$document.scroll(function() {
+  if ($document.scrollTop() >= 0) {
+    // user scrolled 50 pixels or more;
+    // do stuff
+    $element.fadeIn();
+  } else {
+    $element.fadeOut();
+  }
+});
+          </script>
+          </html>
