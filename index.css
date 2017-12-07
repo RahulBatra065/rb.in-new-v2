@@ -4,7 +4,7 @@ body{
 .land,.two{
 word-wrap: break-word;
 font-family: 'Lato', sans-serif;	
-font-size: 10vh;	
+	
 width: 100vw;}
 	.land{
 	 background: rgba(224,0,212); /* For browsers that do not support gradients */
@@ -36,6 +36,5 @@ width: 100vw;}
 	opacity: 1;
 }
 .two{
-	padding-top: 5%;
-	font-size: 3em;
+	
 }
