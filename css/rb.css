@@ -1,0 +1,14 @@
+.rb{
+	
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    font-size: 1.5em;
+   border-radius: 2%;
+   
+    background: white;
+    padding: 5% 5% 5% 5%; 
+}
+.g{
+	padding-right: 2%;
+}
