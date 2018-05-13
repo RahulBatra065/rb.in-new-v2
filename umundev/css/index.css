@@ -16,7 +16,7 @@ a:hover{
 	border-bottom: solid 2px rgba(225,225,225,1)
 }
 .wow{
-	transform: translateY(-400%);
+	transform: translateY(-200%);
 }
 img.ee{
 	height: 10%;
@@ -38,6 +38,8 @@ transform: translateY(10%);
 	}
 }
 .fade{
+	height: 40%;
+	width: 40%;
 	animation: fade 2s;
 }
 @keyframes ff{
@@ -77,4 +79,24 @@ transform: translateY(10%);
 }
 .sgname{
 	opacity: 50%;
+}
+@media only screen and (orientation: potrait) {
+   .fade{
+        height: 80%;
+        width: 80%;
+    }
+}
+.credit{
+	background-color: #37475E;
+	min-width: 100vw;
+	min-width: 40vh;
+	
+	color: white;
+}
+.dsg{
+
+	margin-top: 10%;
+}
+.h6{
+	padding-top: 10%;
 }
