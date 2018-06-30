@@ -1,0 +1,80 @@
+
+.menu{
+	transition: all ease 1s;
+font-family: 'Roboto Slab', serif;
+	font-weight: 100;
+	
+	color: white;
+	z-index: 10;
+	height: 100vh;
+	width: 100vw;
+	background: rgba(0,0,0,0.9);
+	position: fixed;
+
+}
+.menuitem{
+	opacity: .5;
+	transition: all ease 0.4s;
+}
+.menuitem:hover{
+	opacity: 1;
+}
+.mainpartmenu{
+	font-weight: 100;
+	line-height: 2em;
+
+}
+.moxy{
+	font-size:1.5em;
+	font-weight: 300;
+}
+small{
+	line-height: 1px;
+	font-size: .3em;
+	font-family: 'Roboto';
+}
+.thirdpart{
+	font-size: .5em;
+	text-align: left;
+}
+.setter{
+	padding-top: 5%;
+}
+.main{
+	height: 40%;
+	width: 40%;
+}
+.menupos{
+	transform: translateX(-1000%);
+}
+
+@keyframes slideright{
+	from{
+		transform: translateX(-10%);
+	}
+	to{
+		transform: translateX(0%);
+	}
+}
+.menuanimations{
+	animation: slideright 0.4s;
+}
+.behave{
+	color: white;
+	width: 100vw;
+	height: 100vh;
+	background-color: blue;
+
+}
+.cfd{
+	font-weight: 100;
+	font-size: 2em;
+}
+a{
+	color: black;
+	border-bottom: solid 2px rgba(0,0,0,0);
+	transition: all ease 0.4s;
+}
+a:hover{
+	border-bottom: solid 2px black;
+}

@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+}
+i.ssu{
+	font-size: 10em;
+}
+small{
+	font-size: .5em;
+	font-weight: 100;
+	opacity: .5;
+}
+.row{
+	transition: all ease 0.4s;
+}
+.infoboys{
+	height: 100vh;
+	width: 100vw;
+	color: black;
+	text-align: center;
+	transition: all ease 0.4s;
+}
+.infodown{
+	transform: translateY(100000%);
+}
+.infoup{
+	background: white;
+
+	transform: translateY(-90%);
+}
