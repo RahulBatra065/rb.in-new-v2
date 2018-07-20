@@ -1,0 +1,50 @@
+
+body{
+
+	font-family: 'Hind Madurai', sans-serif;
+}
+.lander{
+	margin-top: 5vh;
+	font-size: 2em;
+}
+.menu a{
+	color: black;
+	border-bottom: solid 2px rgba(0,0,0,.3);
+	transition: all ease 0.4s;
+	font-size: 1.2em;
+	padding: 5% 4% .5% 4%;
+	margin-top: 5%;
+}
+.menu a:hover{
+	border-bottom: solid 2px black;
+}
+body{
+	padding-top: 5%;
+}
+.separate{
+	margin-top: 10%;
+}
+.feature{
+	width: 100%;
+	height: auto;
+	padding:2% 2% 2% 2%;
+}
+.aboutme p{
+	font-size: 1em;
+	padding: 2% 2% 2% 2%;
+	
+}
+.aboutme h4{
+padding-top: 4%;
+}
+.work h3{
+	text-align: center;
+}
+.work small{
+	text-align: center;
+	font-size: 1em;
+	
+}
+.lander div{
+	font-weight: 100;
+}
