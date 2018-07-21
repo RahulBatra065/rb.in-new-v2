@@ -64,6 +64,9 @@ padding-top: 4%;
 	.lander span{
 		text-align: left;
 	}
+	 span.more{
+		display: none;
+	}
 	.dp img{
 		display: none;
 	}
@@ -76,6 +79,10 @@ padding-top: 4%;
 	}
 	.about{
 
+	}
+	.baseimg{
+		font-size: 1em;
+		padding: 0%;
 	}
 }
 .about a{
@@ -132,4 +139,37 @@ a{
 }
  a:hover{
 	border-bottom: solid 2px black;
+}
+@media screen and (max-width: 900px)
+{
+	.feature{
+		display: none;
+	}
+	.lander div{
+		font-size: 1.3em;
+		text-align: left;
+	}
+	.lander span{
+		text-align: left;
+	}
+	 span.more{
+		display: none;
+	}
+	.dp img{
+		display: none;
+	}
+	.lander div{
+		text-align: left;
+		font-weight: 400;
+	}
+	.container{
+		width: 80%;
+	}
+	.about{
+
+	}
+	.baseimg{
+		font-size: 1em;
+		padding-top: 30%;
+	}
 }
