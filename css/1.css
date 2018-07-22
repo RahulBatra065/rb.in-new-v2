@@ -173,3 +173,11 @@ a{
 		padding-top: 30%;
 	}
 }
+.one{
+
+}
+
+.cards:hover > .one{
+	background: url("../assets/yearbook/yb1.jpg")  70% 50%;
+
+} 
