@@ -180,4 +180,18 @@ a{
 .cards:hover > .one{
 	background: url("../assets/yearbook/yb1.jpg")  70% 50%;
 
+}
+@keyframes move{
+	0%{
+		transform: translateX(0px);
+	}
+	50%{
+		transform: translateX(10px);
+	}
+	100%{
+		transform: translateX(0px);
+	}
 } 
+.btn:hover > .go{
+	animation: move 2s infinite;
+}
