@@ -92,3 +92,10 @@ padding-top: 10%;
 .freeze{
 	overflow: hidden;
 }
+.material-icons{
+	opacity: .5;
+	transition: all ease .4s;
+}
+.material-icons:hover{
+	opacity: 1;
+}
