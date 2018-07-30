@@ -12,3 +12,21 @@ $(".cross").click(function() {
 	$(".sidemenu").addClass("side");
 	$(".sidemen").addClass("side");
 });
+
+   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        //basically listens to all anchors being click on
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+            // then takes every single event to make it smooooooooooooth
+            // gg 
+        });
+    });
+});
+$(".sidemenu a").click(function() {
+    $(".body").removeClass("freeze");
+    $(".line").fadeIn("fast");
+    $(".sidemenu").addClass("side");
+    $(".sidemen").addClass("side");
+});
