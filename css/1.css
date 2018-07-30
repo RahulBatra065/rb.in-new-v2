@@ -1,6 +1,7 @@
 
 body{
 	font-family: 'Hind Madurai', sans-serif;
+	overflow-x: hidden;
 }
 .lander{
 	margin-top: 5vh;
@@ -118,7 +119,7 @@ padding-top: 4%;
 	background:url("../assets/yearbook/yb1.jpg")  70% 50%;
 }
 .two{
-	background: url("../node.png") #003366 no-repeat center center fixed ;
+	background: url("../node.png") #003366 no-repeat ;
 }
 .three{
 	background: url("../assets/farewell/back.jpg") fixed center center;
