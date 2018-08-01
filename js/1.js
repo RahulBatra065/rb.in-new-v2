@@ -27,3 +27,12 @@ window.location.href = '/work/farewell';
 $('.five').click(function() {
 window.location.href = '/work/farewell';
 });
+$('.fa-instagram').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.fa-facebook').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.fa-medium').click(function() {
+window.location.href = '/work/farewell';
+});
