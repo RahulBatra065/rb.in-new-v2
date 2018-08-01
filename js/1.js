@@ -9,3 +9,21 @@ console.log(
 
 
 
+$('.one').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.two').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.three').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.four').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.four').click(function() {
+window.location.href = '/work/farewell';
+});
+$('.five').click(function() {
+window.location.href = '/work/farewell';
+});
