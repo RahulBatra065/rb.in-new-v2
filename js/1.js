@@ -10,29 +10,29 @@ console.log(
 
 
 $('.one').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = '/work/yearbook';
 });
 $('.two').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = '/work/alphanode';
 });
 $('.three').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = '/work/iumun';
 });
 $('.four').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = '/work/umun';
 });
 $('.four').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = '/work/ecomm';
 });
 $('.five').click(function() {
 window.location.href = '/work/farewell';
 });
 $('.fa-instagram').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = 'https://www.instagram.com/rahulbatra65/';
 });
 $('.fa-facebook').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = 'https://www.facebook.com/rahul.batra.581730';
 });
 $('.fa-medium').click(function() {
-window.location.href = '/work/farewell';
+window.location.href = 'https://medium.com/@Retr0Br0';
 });
