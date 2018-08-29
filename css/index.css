@@ -1,0 +1,39 @@
+body{
+    font-family: 'Hind Madurai', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.lander{
+    background:#bbdefb;
+    -webkit-clip-path: polygon(0% 100%, 100% 82%, 100% 0%, 0% 0%);
+clip-path: polygon(0% 100%, 100% 82%, 100% 0%, 0% 0%);
+padding-bottom: 4%;
+color:white;
+padding-top: 1%;
+
+}
+h1{
+    margin: 0;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translateY(-1px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.fadein{
+    animation: fadein 1s;
+}
+.lander img{
+    padding-top: 4%;
+    margin-bottom: 1%;
+}
+.mendesk{
+    font-weight: 600;
+   padding-top: .5%;
+    font-size: 1.2em;
+}
