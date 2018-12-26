@@ -1,43 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+    h1{
+        z-index: 1;
+    }
+        canvas{
+           
+            position: absolute;
+
+        }
+        a{
+            color: white;
+            border-bottom: solid 0px white;
+            text-decoration: ;
+        }
+        body{
+            font-family: 'Hind Madurai', sans-serif;
+        }
+        p{
+            font-size: 2em;
+            position: absolute;
+            z-index: 0;
+            color: white;
+            text-align: center;
+            padding-left: 35%;
+            padding-top: 10%;
+        }
+        h1{
+            z-index: 100;
+        }
+    </style>
+    <script type="text/javascript" src="js/paper-full.js"></script>
+    <script type="text/paperscript" canvas="canvas">
+      var count = 150;
+
+    project.currentStyle = {
+        fillColor: 'white'
+    };
+
+   
+    for (var i = 0; i < count; i++) {
+       
+        var center = Point.random() * view.size;
+        var scale = (i + 1) / count;
+        var path = new Shape.Circle(center, 5 * scale);
+        path.data.vector = new Point({
+            angle: Math.random() * 360,
+            length : scale * Math.random() / 5
+        });
+    }
+
+    var vector = new Point({
+        angle: 45,
+        length: 0
+    });
+
+    var mouseVector = vector.clone();
+
+    function onMouseMove(event) {
+        mouseVector = view.center - event.point;
+    }
+
+   
+    function onFrame(event) {
+        vector = vector + (mouseVector - vector) / 30;
+
+     
+        for (var i = 0; i < count; i++) {
+            var item = project.activeLayer.children[i];
+            var size = item.bounds.size;
+            var length = vector.length / 10 * size.width / 10;
+            item.position += vector.normalize(length) + item.data.vector;
+            keepInView(item);
+        }
+    }
+
+    function keepInView(item) {
+        var position = item.position;
+        var itemBounds = item.bounds;
+        var bounds = view.bounds;
+        if (itemBounds.left > bounds.width) {
+            position.x = -item.bounds.width;
+        }
+
+        if (position.x < -itemBounds.width) {
+            position.x = bounds.width + itemBounds.width;
+        }
+
+        if (itemBounds.top > view.size.height) {
+            position.y = -itemBounds.height;
+        }
+
+        if (position.y < -itemBounds.height) {
+            position.y = bounds.height  + itemBounds.height / 2;
+        }
+    }
+    </script>
 </head>
 <body>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/materialize.min.css">
-<div class="landing gradDynamic"><center>
-Rahul Batra
-
-
-   <!----> <h3>Hi! My name is Rahul Batra</h3>
-<img src="assets/dp.jpg" alt="" class="dp"> <br>
-<h6>Rahul Batra smilling <i>circa</i> 2018 </h6>
-<br>
-<Center>
-    <h6>Contact Me at: 
-        <br>
-<i class="fab fa-instagram fa-2x"></i>
-<i class="fab fa-github fa-2x"></i>
-<i class="fab fa-apple fa-2x"></i>
-<i class="fab fa-medium fa-2x"></i>
-<i class="fab fa-facebook fa-2x"></i>
-    </h6>
-</Center>
-<div class="footer">
-    <h6> <br>
-    Made with <span>&hearts;</span> before the Math Preboard
-    </h6>
-</div>
-
-</div>
+    <canvas id="canvas" resize hidpi="off" style="background:black">
+    
+    </canvas>
+    <p>
+Hi! <br>
+My name is Rahul Batra <br>
+<img src="gg.jpg" style="border-radius: 50%;height: 200px;width: 200px"> <br>
+Check out the links below <br>
+<a href="https://github.com/RahulBatra065">Github</a> <br>
+<a href="https://www.behance.net/rahulbatra1">Behance</a> <br>
+<a href="mailto:admin@rahulbatra.in">mail</a> <br>
+<a href="https://medium.com/@Retr0Br0">medium</a>
+    </p>
 </body>
-<script src="js/materialize.min.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </html>
