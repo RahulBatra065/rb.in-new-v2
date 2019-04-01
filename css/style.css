@@ -25,7 +25,7 @@
     color: black;
 }
 body{
-    background: white url('../assets/bg.png') top left no-repeat;
+    background: white  top left no-repeat;
   
 }
 .node , .hoverit{
