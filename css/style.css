@@ -34,3 +34,8 @@ body{
 .medium:hover > .hoverit{
    
 }
+@media screen and (max-width: 900px)
+{
+	.right{
+       transform: translateX(10000px)
+}
