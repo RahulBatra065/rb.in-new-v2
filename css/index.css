@@ -11,6 +11,10 @@ body {
     animation: arrow 2s infinite
 }
 
+.lander {
+    height: 100vh;
+}
+
 @keyframes arrow {
     0% {
         transform: translateY(0px)
@@ -38,7 +42,7 @@ body {
 
 .imgpattern {
     background: url('../pattern.jpg');
-    height: 50vh;
+    height: 60vh;
 }
 
 .center-piece {
