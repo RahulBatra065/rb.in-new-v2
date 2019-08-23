@@ -38,6 +38,7 @@ body {
 
 .appear {
     animation: appear 1s;
+    transform: translateX(-2vw)
 }
 
 .imgpattern {

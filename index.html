@@ -7,13 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/mobile-queries.css">
 </head>
 
 <body>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
     <div class="lander">
-        <img src="assets.svg" alt="" style="transform:translateX(-2vw)" class="appear">
+        <style>
+            @media (min-width: 320px) and (max-width: 480px) {
+                .lander {
+                    margin-top: 20vh;
+                }
+                .inner {
+                    transform: translateY(35vh);
+                }
+                .appear {
+                    transform: translateX(-5vw);
+                    overflow: scroll;
+                }
+            }
+        </style>
+        <img src="assets.svg" alt="" style="" class="appear">
 
         <center>
             <div class="inner">
@@ -21,7 +36,7 @@
         </center>
 
     </div>
-    <div class="row">
+    <div class="row media-query">
         <div class="col s12 m3 l3 imgpattern "> </div>
         <div class="col s12 m6 l6  center-piece" style="padding-left: 10vh;">
             <h4 style=" "><i>Rahul Batra</i></h4>
