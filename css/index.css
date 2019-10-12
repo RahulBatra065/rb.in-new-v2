@@ -1,55 +1,34 @@
-body {
-    background: black;
-    color: white;
-}
-
-.inner {
-    transform: translateY(-25vh)
-}
-
-.anim {
-    animation: arrow 2s infinite
-}
-
-.lander {
+.landing-photo {
     height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?nature,water');
 }
 
-@keyframes arrow {
-    0% {
-        transform: translateY(0px)
-    }
-    50% {
-        transform: translateY(-10px)
-    }
-    100% {
-        transform: translateY(0px)
-    }
+body {
+    font-family: 'Average', serif;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.lander h5 {
+    font-weight: 400;
+    font-size: 1.4em;
 }
 
-.appear {
-    animation: appear 1s;
-    transform: translateX(-2vw)
+.lander p {
+    padding-top: 40vh;
 }
 
-.imgpattern {
-    background: url('../pattern.jpg');
-    height: 60vh;
+.landing-photo small {
+    margin-top: 90vh;
 }
 
-.center-piece {
-    padding-left: 2vh;
+.lander a {
+    color: #009688;
+    font-size: 1.2em;
+    letter-spacing: auto;
+    margin-right: 15px;
+    opacity: .7;
+    transition: all ease .3s;
 }
 
-.insta {
-    font-size: 1.5em;
+.lander a:hover {
+    opacity: 1;
 }

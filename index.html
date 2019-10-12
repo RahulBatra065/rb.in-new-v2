@@ -1,84 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet">
 
 <head>
-    <meta name="theme-color" content="#000000" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115003818-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-115003818-2');
-    </script>
-
-    <link rel="stylesheet" href="css/mobile-queries.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
+<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
 
 <body>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
-    <div class="lander">
-        <style>
-            @media (min-width: 320px) and (max-width: 480px) {
-                .lander {
-                    margin-top: 20vh;
-                }
-                .inner {
-                    transform: translateY(35vh);
-                }
-                .appear {
-                    transform: translateX(-5vw);
-                    overflow: scroll;
-                }
-            }
-        </style>
-        <img src="assets.svg" alt="" style="" class="appear">
+    <div class="row">
+        <div class="col s6 m6 l6 landing-photo">
+            <!--   <small>Photos by Unsplash</small> -->
 
-        <center>
-            <div class="inner">
-                <i class="fa fa-angle-down fa-4x anim" aria-hidden="true"></i></div>
-        </center>
 
-    </div>
-    <div class="row media-query">
-        <div class="col s12 m3 l3 imgpattern "> </div>
-        <div class="col s12 m6 l6  center-piece" style="padding-left: 10vh;">
-            <h4 style=" "><i>Rahul Batra</i></h4>
-
-            <br>
-            <h5>/Rahul Batra/</h5>
-            Hi! My name is Rahul Batra.I am an Economics Major at the Symbiosis School of Economics(SIU,Pune). One of the highest rated institutions for Economics in India. I am also a freelance visual artist specialising in Vectors and Illustrations. Click
-            <a href="">here</a> for my resume or check out the social links below
         </div>
-        <div class=" col s12 m3 l3 imgpattern "></div>
-    </div>
-    <center>
-        <div class="insta">
-            <i class="fa fa-instagram " aria-hidden="true"></i> /rahulbatra65 <br>
-            <i class="fa fa-rss" aria-hidden="true"></i> blog.rahulbatra.in <br>
-            <i class="fa fa-github" aria-hidden="true"> </i> /rahulbatra065 <br>
-            <i class="fa fa-behance" aria-hidden="true"></i> /rahulbatra1 <br>
-            <i class="fa fa-spotify" aria-hidden="true"></i> /rudyguy123 <br>
-            <i class="fa fa-envelope" aria-hidden="true"></i> admin@rahulbatra.in
+        <div class="lander col s6 m6 l6 ">
+            <center>
+                <p>
+                    <h5>Hi! My name is Rahul Batra <br> I study economics at Symbiosis International University</h5>
+                    <a href="https://github.com/rahulbatra065">Work</a>
+                    <a href="/assets/resume.pdf">Resume</a>
+                    <a href="mailto:rahulbatra065@gmail.com">Contact</a>
+                    <a href="https://instagram.com/rahulbatra065">Social</a>
+                    <a href="https://blog.rahulbatra.in">Blog</a>
+
+
+                </p>
+            </center>
+
         </div>
-
-
-        <br> <br> <br> <br> <br>
-        <small>All Rights Reserved 2019 Rahul Batra, not the code is super intense but you know, just in case! <br>
-        Made with love in India with Visual Studio Code
-        </small>
+    </div>
 </body>
-<script src="bower_components/jquery/dist/jquery.js "></script>
-<script src="https://use.fontawesome.com/4330864dc7.js "></script>
-<script src="bower_components/materialize/dist/js/materialize.js "></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/materialize/dist/js/materialize.js"></script>
 
 </html>
