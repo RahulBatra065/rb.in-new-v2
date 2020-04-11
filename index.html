@@ -1,70 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://fonts.googleapis.com/css?family=Average&display=swap" rel="stylesheet">
-<script src="https://use.fontawesome.com/5006581c1c.js"></script>
 
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Rahul Batra</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/mobile-queries.css">
 </head>
-<link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.css">
+<style>
+    span.lever {
+        background: blue;
+    }
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+<script src="https://kit.fontawesome.com/16538b37be.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 <body>
-    <div class="row">
-        <div class="col s12 m6 l6 landing-photo" style="padding-top: 95vh;">
-            <!--   <small>Photos by Unsplash</small> -->
-            <small style="color:white;background: black;padding:1% 1% 1% 1%;">Photos by Unsplash</small>
+    <div class="landing container">
+        <h2>
+            <center>Hi!, My Name is Rahul! <br> <small>Welcome to my space on the internet</small> <br>
+                <small> <a href="assets/resume.pdf"> Resume </a>
+                    <a href="https://github.com/RahulBatra065"> Work </a>
+                    <a href="/about"> About </a>
+                    <a href="/contact"> Contact </a>
+                </small>
+                <br>
+                <div class="switch">
+                    <label>
+                        <i class="fa fa-lightbulb" ></i>
+                      <input type="checkbox">
+                      <span class="lever"></span>
+                      <i class="fas fa-moon"></i>
+                    </label>
+                </div>
+                <br>
+                <div class="container">
+                    <div class="row"><i class="fab fa-github" style="font-size: .5em;"></i>
+                        <i class="fab fa-behance" style="font-size: .5em;"></i>
+                        <i class="fab fa-linkedin-in" style="font-size: .5em;"></i>
+                    </div>
+                </div>
+                <small>This website is still in progress check back later! <br>   Scroll Down for some of my favourite qoutes</small>
 
-        </div>
-        <div class="lander col s12 m6 l6 ">
-            <center>
-                <p>
-                    <h5>Hi! My name is Rahul Batra <br> I study economics at Symbiosis International University</h5>
-                    <a href="https://github.com/rahulbatra065">Work</a>
-                    <a href="/assets/resume.pdf">Resume</a>
-                    <a href="mailto:rahulbatra065@gmail.com">Contact</a>
-                    <a href="https://instagram.com/rahulbatra065">Social</a>
-                    <a href="https://blog.rahulbatra.in">Blog</a>
-                    <h6>
-                        <center>Featured Works:
+        </h2>
 
-
-                            <div class="row">
-                                <div class="col s12 m12">
-
-                                    <div class="card col m6 s6 l6" style="transform: translateX(50%);">
-                                        <div class="card-image">
-                                            <img src="images/sample-1.jpg" id="photo" class="photo">
-
-                                        </div>
-                                        <div class="card-content">
-
-                                            <p>
-                                                <small class="name"></small> <br>
-                                                <a href="" class="gh"> <i class="fa fa-github" aria-hidden="true"></i> </a>
-                                                <a href="" class="web"> <i class="fa fa-internet-explorer" aria-hidden="true"></i> </a>
-                                            </p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </center>
-                    </h6>
-
-                </p>
-            </center>
-
-        </div>
+        </center>
+    </div>
+    <div class="qoutes container" style="">
+        <center>
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <h3>“If you no longer go for a gap which exists you are no longer a racing driver”</h3>
+                &nbsp;&nbsp;-Aryton Senna, 1990
+            </div>
+        </center>
+    </div>
+    <div class="qoutes container" style="">
+        <center>
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <h3>“Rules are helpful guidelines for stupid people”</h3>
+                &nbsp;&nbsp;-Gregory House (Hugh Laurie)
+            </div>
+        </center>
+    </div>
+    <div class="qoutes container" style="">
+        <center>
+            <div data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <h3>“Everybody Lies”</h3>
+                &nbsp;&nbsp;-Gregory House (Hugh Laurie)
+            </div>
+        </center>
     </div>
 </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    $(".lever").click(() => {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
 
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="css/js/index.js"></script>
-<script src="bower_components/materialize/dist/js/materialize.js"></script>
+    })
+</script>
 
 </html>

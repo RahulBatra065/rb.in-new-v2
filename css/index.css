@@ -1,34 +1,39 @@
-.landing-photo {
-    height: 100vh;
-    background: url('https://source.unsplash.com/1600x900/?nature,water');
-}
-
-body {
-    font-family: 'Average', serif;
-}
-
-.lander h5 {
-    font-weight: 400;
-    font-size: 1.4em;
-}
-
-.lander p {
-    padding-top: 30vh;
-}
-
-.landing-photo small {
-    margin-top: 90vh;
-}
-
-.lander a {
-    color: #009688;
-    font-size: 1.2em;
-    letter-spacing: auto;
-    margin-right: 15px;
-    opacity: .7;
-    transition: all ease .3s;
-}
-
-.lander a:hover {
-    opacity: 1;
-}
+        body {
+            font-family: 'Average', serif;
+        }
+        
+        .landing {
+            padding-top: 15%;
+            height: 100vh;
+        }
+        
+        small {
+            opacity: .5;
+        }
+        
+        small:nth-of-type(2) {
+            font-size: .5em;
+        }
+        
+        small:nth-of-type(3) {
+            font-size: .3em;
+        }
+        
+        small a {
+            transition: all ease .2s;
+            opacity: .5;
+        }
+        
+        small a:hover {
+            opacity: 1;
+        }
+        
+        .qoutes {
+            height: 100vh;
+        }
+        
+        .qoutes:nth-of-type(1) {
+            background: url('../assets/senna.jpg');
+            background-position-x: 50%;
+            -webkit-background-composite: 50%;
+        }
