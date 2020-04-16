@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Batra</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+    span.lever {
+        background: blue;
+    }
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+<script src="https://kit.fontawesome.com/16538b37be.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<body class="container">
+
+    <h2>
+        <center>
+            <small>   <a href="https://rahulbatra.in">Go Home</a></small>
+
+            <div class="switch">
+                <label>
+                    <i class="fa fa-lightbulb" ></i>
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            About
+    </h2>
+    <center>
+        Hi! My name is Rahul Batra, I'm a sophomore at Symbiosis University, majoring in economics with an elected emphasis in math and econometrics. I am a self taught full stack developer, now aspiring to pursue a career in Data Science. View my projects on
+        github <a href="https://github.com/rahulbatra065">here</a>
+    </center>
+    <div class="section">
+        <h3>Education</h3>
+        <h5>Delhi Public School,Gurgaon
+            <br> <small>Commerce with Mathematics <br>Batch of 2019</small>
+        </h5>
+        <h5>Symbiosis School of Economics (Department of Economics)
+            <br> <small>BSc (Hons) - Economics <br>Batch of 2022</small> <br> <small>Current GPA - 7.53/10 (October 2019) <br>(Learn how the University hands out GPAs to students which differs from standard grading systems)</small>
+        </h5>
+    </div>
+
+    <div class="section">
+        <h3>Certifications</h3>
+        <h5>DataCamp
+            <br> <small>Introduction to SQL <br>Introduction to Git <br> Introduction to Python <br> Introduction to Python for datascience <br> Python Datascience Toolbox (Part 1) <br> Introduction to Relational Database in SQL <br>Intermediate Python <br></small>
+        </h5>
+        <h5>freeCodeCamp
+            <br> <small>Data Structures and Javascript Certification</small>
+        </h5>
+    </div>
+    <div class="section">
+        <h3>Experience</h3>
+        <h5>Research Intern <br>
+            <small>Department of Economics, Symbiosis University<br>TBA<br> Under Prof. Shailesh Bharati</small>
+        </h5>
+        <h5>Social Media Intern <br>
+            <small>Indian Cancer Society (Delhi Branch) <br>May 2019 <br></small>
+        </h5>
+        <h5>Team Leader - Design and Branding
+            <br> <small>TED<sup>x</sup>Youth@DPSGurgaon <br>Aug 2018 - Oct 2018</small>
+        </h5>
+    </div>
+
+    <div class="container">
+        <hr>
+        <center>All Rights Reserved. <br> Rahul Batra 2020</center>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    $(".lever").click(() => {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+
+    })
+</script>
+
+</html>

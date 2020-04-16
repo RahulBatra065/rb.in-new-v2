@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Batra</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<style>
+    span.lever {
+        background: blue;
+    }
+    
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+</style>
+<script src="https://kit.fontawesome.com/16538b37be.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<body class="container">
+
+    <h2>
+        <center>
+            <small>   <a href="https://rahulbatra.in">Go Home</a></small>
+
+            <div class="switch">
+                <label>
+                    <i class="fa fa-lightbulb" ></i>
+                  <input type="checkbox">
+                  <span class="lever"></span>
+                  <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            Contact
+    </h2>
+    <center>
+        Email : <a href="mailto:rahulbatra065@gmail.com">rahulbatra065[at]gmail.com</a> <br>
+        <a href="https://github.com/rahulbatra065">Github</a> <br>
+        <a href="https://behance.net/rahulbatra1">Behance</a>
+    </center>
+    <div class="section">
+        <h3>Featured Project <br> <small> <center>Equilibria 2019</small></h3>
+        <center>
+            <a href="https://www.behance.net/gallery/91240155/Equilibria20"> <img src="../assets/eq.png" alt=""> </a> <br>
+            <small>Click on the Logo to learn more !</small>
+
+        </center>
+    </div>
+    <div class="container">
+        <hr>
+        <center>All Rights Reserved. <br> Rahul Batra 2020</center>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+    $(".lever").click(() => {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+
+    })
+</script>
+
+</html>
