@@ -1,86 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115003818-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-115003818-2');
-    </script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Average&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/16538b37be.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rahul Batra</title>
-    <link rel="stylesheet" href="css/index.css">
+    <style>
+        body{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-family: 'Rosarivo', serif;;
+            font-size: 3vh;
+        }
+        a{
+            color: black;
+        }
+        h1{
+            font-size: 3rem;
+            color: black;
+        }
+        h3{
+            font-size:1.6rem ;
+        }
+        h1,h3,i{
+            opacity: .5;
+            transition: all ease .3s;
+        }
+        h1:hover,i:hover{
+            opacity: 1;
+        }
+        .mail{
+            color: black;
+            text-decoration: underline green dashed;
+        }
+        links{}
+    </style>
 </head>
-<style>
-    span.lever {
-        background: blue;
-    }
-    
-    .dark-mode {
-        background-color: black;
-        color: white;
-    }
-</style>
-<script src="https://kit.fontawesome.com/16538b37be.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-<body>
-    <div class="landing container">
-        <h2>
-            <center>Hi!, My Name is Rahul! <br>
-                <small> <a href="assets/resume.pdf"> Resume </a>
-                    <a href="https://github.com/RahulBatra065"> Work </a>
-                    <a href="/about"> About </a>
-                    <a href="/contact"> Contact </a>
-                </small>
-                <br>
-                <div class="switch">
-                    <label>
-                        <i class="fa fa-lightbulb" ></i>
-                      <input type="checkbox">
-                      <span class="lever"></span>
-                      <i class="fas fa-moon"></i>
-                    </label>
-                </div>
-                <br>
-                <div class="container">
-                    <div class="row"><i class="fab fa-github" style="font-size: .5em;"></i>
-                        <i class="fab fa-behance" style="font-size: .5em;"></i>
-                        <i class="fab fa-linkedin-in" style="font-size: .5em;"></i>
-                    </div>
-                </div>
-
-        </h2>
-
-        </center>
-    </div>
-
-    <div class="container">
-        <hr>
-        <center>All Rights Reserved. <br> Rahul Batra 2020</center>
-    </div>
+<body class="">
+  
+ <center>
+    my work includes:
+    <br>
+    <h1><a href="/assets/paper.pdf"> a paper on statistics</a></h1>
+    <h1><a href="https://scaai.edu.in/">researcher at center for applied artifical intelligence</a></h1>
+    <h1><a href="https://www.sociowash.com/">internship at an ad firm </a></h1>
+    <h1> <a href="https://github.com/RahulBatra065/QR-Code-Passes"> arctic vault contribution </a></h1>
+    <h1> <a href="https://www.fabhotels.com/"> social media intern at a hotel aggregator </a></h1>
+    <h1><a href=""> working paper on BD-LSTM RNN </a></h1>
+   <a href="https://github.com/RahulBatra065"><i class="fab fa-github" style="font-size: 1.5em;"></i></a> &nbsp;
+                        <a href=""><i class="fab fa-behance" style="font-size: 1.5em;"></i></a> &nbsp;
+                       <a href="https://www.linkedin.com/in/rahul-b-197122176/"> <i class="fab fa-linkedin-in" style="font-size: 1.5em;"></i> </a><br>
+ all rights reserved.Rahul Batra 2021 <br>
+ got a job? a question? contact me at <a href="mailto:admin@rahulbatra.in" class="mail">admin[at]rahulbatra.in</a>
+</center>
 </body>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-    $(".lever").click(() => {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-
-    })
-</script>
-
 </html>
